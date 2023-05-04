@@ -18,7 +18,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;  
-    
+
 }
 .botao-entrar{
     
@@ -28,4 +28,27 @@ body{
     background: none;
     color: #6FBE85;
     
+}
+main {
+    display: flex;
+
+}
+.container{
+    margin-left: 80px;
+}
+#titulo{
+    font-family: 'Fugaz One', cursive;
+}
+#texto{
+    font-family: 'Arya', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.button-register{
+    padding: 14px;
+    font-family: 'Inter', sans-serif;
+    background: #3A6CAF;
+    color: #FEFEFE;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px #3A6CAF;
 }
