@@ -1,54 +1,111 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    border: red 1px solid;
+    border: none;
+    box-sizing: border-box;
 }
-body{
+body {
     height: 100vh;
+    background: #FEFEFE;
 }
-.header{
+
+header {
+    width: 88%;
+    height: 80px;
+    margin: 0 auto;
+    justify-content: space-between;
     display: flex;
-    margin-left: 80px;
 }
-.logo-preta{
+
+.logo-black {
     font-family: 'JetBrains Mono', monospace;
     align-items: center;
 }
-#logo{
+
+#logo {
     display: flex;
     flex-direction: row;
     align-items: center;  
 
 }
-.botao-entrar{
-    
+.botao-enter {
+    width: 120px;
+    font-size: 18px;
     text-align: center;
-    margin-left: 900px;
+    /* margin-left: 900px; */
     font-family: 'Inter', sans-serif;
     background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #6FBE85;
-    
 }
+
+.botao-enter img {
+    margin-left: 5px;
+}
+
 main {
     display: flex;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
 
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    width: 88%;
+    margin: 0 auto;
+    
+    align-items: center;
+    justify-content: space-between;
 }
-.container{
-    margin-left: 80px;
-}
-#titulo{
+
+#title {
     font-family: 'Fugaz One', cursive;
+
+    z-index: 1;
 }
-#texto{
+
+.title-two {
+    z-index: 1;
+    position: absolute;
+    font-size: 35px;
+   
+}
+
+.bolinhas {
+    z-index: -1;
+}
+
+.left-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#text {
     font-family: 'Arya', sans-serif;
     font-size: 15px;
     line-height: 20px;
+    margin-top: 8px;
 }
 .button-register{
     padding: 14px;
+    margin-top: 25px;
     font-family: 'Inter', sans-serif;
     background: #3A6CAF;
     color: #FEFEFE;
     border-radius: 5px;
     box-shadow: 1px 1px 8px 1px #3A6CAF;
+}
+
+.logo-main {
+    width: 307px;
+    height: 331px;
+    margin-right: 40px;
 }
