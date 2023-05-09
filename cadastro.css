@@ -1,5 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    color: white;
     font-family: 'Inter', sans-serif;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
 }
