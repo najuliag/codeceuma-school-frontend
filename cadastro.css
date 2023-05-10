@@ -69,6 +69,10 @@ input {
     font-family: 'Inter';
 }
 
+input:hover{
+    transform: scale(1.1,1.1);
+}
+
 .label-float {
 
     position: relative;
@@ -106,4 +110,8 @@ button {
     color: #FFFFFF;
     cursor: pointer;
 
+}
+
+button:hover{
+    transform: scale(1.1,1.1);
 }

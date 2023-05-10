@@ -134,6 +134,10 @@ main {
     cursor: pointer;
 }
 
+.button-register:hover{
+    transform: scale(1.1,1.1);
+}
+
 .logo-main {
     width: 307px;
     height: 331px;
