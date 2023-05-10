@@ -43,6 +43,7 @@ header {
     align-items: center;
     justify-content: center;
     color: #6FBE85;
+    cursor: pointer;
 }
 
 .botao-enter img {
@@ -130,6 +131,7 @@ main {
     color: #FEFEFE;
     border-radius: 5px;
     box-shadow: 1px 1px 8px 1px #3A6CAF;
+    cursor: pointer;
 }
 
 .logo-main {
