@@ -10,16 +10,16 @@ document.querySelector('#cadastrar').addEventListener('click', function(event) {
   if (usuario === '') {
     alert('Por favor, preencha o campo usuário.');
     return;
-    if (email === '') {
-      alert('Por favor, preencha o campo email.');
-      return;
-    } else if (!isValidEmail(email)) {
-      alert('Por favor, preencha um email válido.');
-      return;
-    }
   }
-
-
+  
+  if (email === '') {
+    alert('Por favor, preencha o campo email.');
+    return;
+  } else if (!isValidEmail(email)) {
+    alert('Por favor, preencha um email válido.');
+    return;
+  }
+  
   if (senha === '') {
     alert('Por favor, preencha o campo senha.');
     return;
