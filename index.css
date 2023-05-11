@@ -11,6 +11,11 @@
 body {
     height: 100vh;
     background: #FEFEFE;
+    background-image: url(./assets/img\ bolas.svg);
+    background-position: 75%;
+    background-size: cover;
+
+    
 }
 
 header {

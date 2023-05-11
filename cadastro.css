@@ -26,6 +26,9 @@ body {
   position: relative;
   width: 530px;
   height: 550px;
+  /* width: 800px;
+  height: 887px;  medida correta do card*/
+
   background: linear-gradient(180deg, #6fbe85 0%, #3a6caf 97.92%);
   background-blend-mode: exclusion;
   border-radius: 40px;
@@ -65,11 +68,12 @@ input {
   padding: 15px;
   outline: 0;
   font-family: "Inter";
+  transition: 0.5s ease-in-out;
 }
 
-input:hover {
+/* input:hover {
     transform: scale(1.1, 1.1);
-}
+} */
 
 .label-float {
     position: relative;
