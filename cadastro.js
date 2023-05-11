@@ -6,6 +6,7 @@ document.querySelector('#cadastrar').addEventListener('click', function (event) 
   const usuario = document.querySelector('#usuario').value.trim();
   const email = document.querySelector('#email').value.trim();
   const senha = document.querySelector('#senha').value.trim();
+  const senhaInput = document.querySelector('#senha');
 
   if (usuario === '') {
     alert('Por favor, preencha o campo usuário.');
@@ -15,21 +16,19 @@ document.querySelector('#cadastrar').addEventListener('click', function (event) 
   if (email === '') {
     alert('Por favor, preencha o campo email.');
     return;
-<<<<<<< HEAD
   }if (!isValidEmail(email)) {
     alert('Por favor, preencha com um email válido.');
-=======
-  } else if (!isValidEmail(email)) {
-    alert('Por favor, preencha um email válido.');
->>>>>>> d652296991686d67430b6860ada4d4016b787bed
     return;
   }
   
   if (senha === '') {
     alert('Por favor, preencha o campo senha.');
     return;
-  }if (senha.length < 8) {
-    alert('A senha deve conter pelo menos 8 caracteres.');
+  }if (senha.length < 8 || !/[A-Z]/.test(senha) || !/[a-z]/.test(senha) || !/\d/.test(senha)) {
+    alert("A senha deve conter:" + "\nPelo menos 8 caracteres;" 
+    + "\nUma letra maiúscula;" 
+    + "\nUma letra minúscula;"
+    +"\nUm número.");
     return;
   }
   else {
