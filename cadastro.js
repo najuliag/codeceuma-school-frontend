@@ -6,7 +6,6 @@ document.querySelector('#cadastrar').addEventListener('click', function (event) 
   const usuario = document.querySelector('#usuario').value.trim();
   const email = document.querySelector('#email').value.trim();
   const senha = document.querySelector('#senha').value.trim();
-  const senhaInput = document.querySelector('#senha');
 
   if (usuario === '') {
     alert('Por favor, preencha o campo usuário.');
@@ -25,7 +24,7 @@ document.querySelector('#cadastrar').addEventListener('click', function (event) 
     alert('Por favor, preencha o campo senha.');
     return;
   }if (senha.length < 8 || !/[A-Z]/.test(senha) || !/[a-z]/.test(senha) || !/\d/.test(senha)) {
-    alert("A senha deve conter:" + "\nPelo menos 8 caracteres;" 
+    alert("A senha deve conter pelo menos:" + "\n8 caracteres;" 
     + "\nUma letra maiúscula;" 
     + "\nUma letra minúscula;"
     +"\nUm número.");
