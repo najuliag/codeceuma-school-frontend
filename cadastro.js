@@ -15,8 +15,13 @@ document.querySelector('#cadastrar').addEventListener('click', function (event) 
   if (email === '') {
     alert('Por favor, preencha o campo email.');
     return;
+<<<<<<< HEAD
   }if (!isValidEmail(email)) {
     alert('Por favor, preencha com um email válido.');
+=======
+  } else if (!isValidEmail(email)) {
+    alert('Por favor, preencha um email válido.');
+>>>>>>> d652296991686d67430b6860ada4d4016b787bed
     return;
   }
   

@@ -79,6 +79,10 @@ main {
 
 }
 
+.green-letter {
+    color: #6FBE85;
+}
+
 .title-two {
     z-index: 1;
     position: absolute;
