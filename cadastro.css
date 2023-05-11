@@ -1,86 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: red solid 1px; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: red solid 1px; */
 }
 
 body {
-    background-color: white;
-    height: 100vh;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    background-attachment: fixed;
-    overflow: hidden;
+  background-color: white;
+  height: 100vh;
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    position: relative;
-    width: 530px;
-    height: 550px;
-    background: linear-gradient(180deg, #6FBE85 0%, #3A6CAF 97.92%);
-    background-blend-mode: exclusion;
-    border-radius: 40px;
+  position: relative;
+  width: 530px;
+  height: 550px;
+  background: linear-gradient(180deg, #6fbe85 0%, #3a6caf 97.92%);
+  background-blend-mode: exclusion;
+  border-radius: 40px;
 }
 
 .logo-branca {
-    width: 55px;
-    height: 70px;
-    margin-top: 20px;
-    margin-left: 230px;
+  width: 55px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 230px;
 }
 
 h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 147px;
-    height: 30px;
-    margin-left: 190px;
-    font-family: 'Inter';
-    font-size: 16px;
-    line-height: 30px;
-    color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 147px;
+  height: 30px;
+  margin-left: 190px;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 input {
-
-    display: flex;
-    width: 270px;
-    height: 50px;
-    left: calc(50% - 384px/2 - 9px);
-    top: 323px;
-    background: rgba(217, 217, 217, 0.5);
-    border-radius: 10px;
-    border: none;
-    display: block;
-    text-align: left;
-    margin: 0 auto;
-    padding: 15px;
-    outline: 0;
-    font-family: 'Inter';
+  display: flex;
+  width: 270px;
+  height: 50px;
+  left: calc(50% - 384px / 2 - 9px);
+  top: 323px;
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 10px;
+  border: none;
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 15px;
+  outline: 0;
+  font-family: "Inter";
 }
 
-input:hover{
-    transform: scale(1.1,1.1);
+input:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .label-float {
-
     position: relative;
-    padding: 10px 5px;
     display: flex;
+    padding: 10px 5px;
     text-align: left;
     margin-left: 125px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -91,27 +88,26 @@ input:hover{
     display: flex;
     justify-content: center;
     margin-top: 25px;
-
 }
 
 button {
     width: 70px;
     height: 37px;
-    left: calc(50% - 176px/2);
+    left: calc(50% - 176px / 2);
     top: 730px;
-    background: #35DB63;
+    background: #35db63;
     border-radius: 15px;
     border: none;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 11px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
-
+    outline: 0;
 }
 
-button:hover{
-    transform: scale(1.1,1.1);
+button:hover {
+  transform: scale(1.1, 1.1);
 }

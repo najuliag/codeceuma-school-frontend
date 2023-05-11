@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 
-document.querySelector('#cadastrar').addEventListener('click', function(event) {
+document.querySelector('#cadastrar').addEventListener('click', function (event) {
   event.preventDefault();
 
   const usuario = document.querySelector('#usuario').value.trim();
@@ -10,25 +10,30 @@ document.querySelector('#cadastrar').addEventListener('click', function(event) {
   if (usuario === '') {
     alert('Por favor, preencha o campo usuário.');
     return;
-    if (email === '') {
-      alert('Por favor, preencha o campo email.');
-      return;
-    } else if (!isValidEmail(email)) {
-      alert('Por favor, preencha um email válido.');
-      return;
-    }
   }
-
-
+  
+  if (email === '') {
+    alert('Por favor, preencha o campo email.');
+    return;
+  }if (!isValidEmail(email)) {
+    alert('Por favor, preencha com um email válido.');
+    return;
+  }
+  
   if (senha === '') {
     alert('Por favor, preencha o campo senha.');
     return;
-  } else if (senha.length < 8) {
+  }if (senha.length < 8) {
     alert('A senha deve conter pelo menos 8 caracteres.');
     return;
   }
-  else{
-  alert('Formulário enviado com sucesso!');
-  form.submit();}
+  else {
+    alert('Formulário enviado com sucesso!');
+    form.submit();
+  }
 });
 
+function isValidEmail(email) {
+  const re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
